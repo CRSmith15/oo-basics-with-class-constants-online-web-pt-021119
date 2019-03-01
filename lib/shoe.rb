@@ -4,8 +4,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    unless self.brand == @brand
     BRANDS << brand 
-    if 
     
   end
   def brand 
