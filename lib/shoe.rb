@@ -4,9 +4,12 @@ class Shoe
   BRANDS = []
 
   def initialize(brand)
+    all_brands = []
     @brand = brand
-    BRANDS << brand
-    BRANDS.uniq {|name| name.object_id}
+    all_brands << brand
+    unique_brands = all_brands.uniq 
+    BRANDS << unique_brands
+    
   end
 
   def cobble
