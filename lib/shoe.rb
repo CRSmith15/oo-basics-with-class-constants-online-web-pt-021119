@@ -8,7 +8,7 @@ class Shoe
     @brand = brand
     all_brands << brand
     unique_brands = all_brands.uniq 
-    BRANDS << unique_brands
+    BRANDS << unique_brands.to_s 
     
   end
 
