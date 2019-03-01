@@ -4,7 +4,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    unless BRANDS.detect("#{brand}")
+    unless BRANDS.detect("#{@brand}")
     BRANDS << brand 
   end
 
