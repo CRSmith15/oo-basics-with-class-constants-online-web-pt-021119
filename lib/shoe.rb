@@ -6,7 +6,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << @brand
-    BRANDS.to_set 
+    BRANDS.uniq {|name| name.object_id}
   end
 
   def cobble
