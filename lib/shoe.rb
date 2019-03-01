@@ -6,6 +6,7 @@ class Shoe
     @brand = brand
     unless self.brand == @brand
     BRANDS << brand 
+  end
 
     
   end
